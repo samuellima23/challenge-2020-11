@@ -1,28 +1,48 @@
-# Desafio Alfred: Novembro/2020 
+# My Universal React Project
 
-Neste desafio você terá que implementar um sistema mobile com React Native onde será possível buscar por filmes e series utilizando a API (http://www.omdbapi.com/). A sua solução deve:
-
-- Permitir a busca por filmes
-- Listar os filmes encontrados
-- Permitir escolher filmes favoritos
-- Permitir remover um filme dos favoritos
-- Listar os filmes favoritos
-- Caso o aplicativo seja fechado, os favoritos não devem ser perdidos
-
-Para ajudar na concepção do layout, estamos disponibilizando abaixo um print de um aplicativo que atende os requisitos listados. Use sua criatividade para criar um layout novo, ou reproduza o leyout proposto, se preferir.
-
-Para facilitar um pouco mais as coisas, já deixamos separada uma chave de acesso para a API (ou você pode criar a sua também):
-
-<p align="center">
-  <img src="./cinema-app.gif" alt="cinema-app" width="200px">
+<p>
+  <!-- iOS -->
+  <a href="https://itunes.apple.com/app/apple-store/id982107779">
+    <img alt="Supports Expo iOS" longdesc="Supports Expo iOS" src="https://img.shields.io/badge/iOS-4630EB.svg?style=flat-square&logo=APPLE&labelColor=999999&logoColor=fff" />
+  </a>
+  <!-- Android -->
+  <a href="https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=blankexample">
+    <img alt="Supports Expo Android" longdesc="Supports Expo Android" src="https://img.shields.io/badge/Android-4630EB.svg?style=flat-square&logo=ANDROID&labelColor=A4C639&logoColor=fff" />
+  </a>
+  <!-- Web -->
+  <a href="https://docs.expo.io/workflow/web/">
+    <img alt="Supports Expo Web" longdesc="Supports Expo Web" src="https://img.shields.io/badge/web-4630EB.svg?style=flat-square&logo=GOOGLE-CHROME&labelColor=4285F4&logoColor=fff" />
+  </a>
 </p>
 
-Chave de API: 925eba28
-Exemplo requisição: GET http://www.omdbapi.com/?apikey=925eba28&s=batman
+## 🚀 How to use
 
-Você pode criar uma aplicação nativa, ou com expo (sdk39+).
+- Install packages with `yarn` or `npm install`.
+  - If you have native iOS code run `npx pod-install`
+- Run `yarn start` to start the bundler.
+- Open the project in a React runtime to try it:
+  - iOS: [Client iOS](https://itunes.apple.com/app/apple-store/id982107779)
+  - Android: [Client Android](https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=blankexample)
+  - Web: Any web browser
 
-## Entrega da sua solução
-Altere o arquivo README.md descrevendo o que o aplicativo faz e que tipo de premissas foram adotadas para desenvolver as funcionalidades. Adicione pelo menos uma imagem do aplicativo, pode ser uma imagem estática ou um gif do aplicativo sendo utilizado. Para entregar o projeto, faça um fork neste repositório e envie o link do seu repositório para o responsável quando o projeto estiver finalizado.
+## Adding Native Code
 
-Ficamos no aguardo da entrega da sua solução e desejamos boa sorte ;)
+This project can be run from a web browser or the Expo client app. You may find that you want to add more native code later on. You can do this by ejecting the project and rebuilding it yourself.
+
+- Run `yarn eject` to create the native projects.
+- You can still run your project in the web browser or Expo client, you just won't be able to access any new native modules you add.
+
+## Publishing
+
+- Deploy the native app to the App store and Play store using this guide: [Deployment](https://docs.expo.io/distribution/app-stores/).
+- Deploy the website using this guide: [Web deployment](https://docs.expo.io/distribution/publishing-websites/).
+
+## 📝 Notes
+
+- Learn more about [Universal React](https://docs.expo.io/).
+- See what API and components are [available in the React runtimes](https://docs.expo.io/versions/latest/).
+- Find out more about developing apps and websites: [Guides](https://docs.expo.io/guides/).
+
+## Objetivo
+- o Aplicativo tem como objetivo a busca por filmes da API do Imdb
+- A possibilidade de favoritar e remover os favoritos
